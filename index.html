@@ -17,10 +17,15 @@
     <header class="header">
         <div class="container">
 
-            <img class="header__logo" src="assets/img/logo/Logo.png" alt="Logo da Alura Dev">
+            <div class="header__logo">
+
+                <img class="header__logo" src="assets/img/logo/Logo.png" alt="Logo da Alura Dev">
+            </div>
+
             <form class="header__search" action="#">
                 <input class="textbox" type="search" placeholder="Busque por algo">
             </form>
+
 
             <div class="header__avatar">
                 <img src="assets/img/profile/Photo.png" alt="Imagem de perfil">
@@ -33,7 +38,9 @@
     <main class="main">
         <div class="container">
 
-            <nav class="navMenu">
+
+
+            <nav class="sideMenu">
                 <h3>Menu</h3>
 
                 <a class="navMenu__link--active" href="index.html">
@@ -46,6 +53,56 @@
                     Comunidade
                 </a>
             </nav>
+
+
+            <form class="header__search" action="#">
+                <input class="textbox" type="search" placeholder="Busque por algo">
+            </form>
+
+            
+
+            <div class="sideMenu">
+                <form class="sideMenu__projetoForm">
+
+                    <fieldset class="sideMenu__projetoForm__fieldset-projeto">
+                        <h3>Seu projeto</h3>
+                        <input class="textbox" type="text" placeholder="Nome do seu projeto" name="nome_projeto">
+                        <input class="textbox textbox-descricao" type="text" placeholder="Descrição do seu projeto" name="descricao_projeto">
+                    </fieldset>
+
+                    <fieldset>
+                        <h3>Personalização</h3>
+                        <select class="textbox">
+                            <option value="javascript">Javascript</option>
+                            <option value="javascript">HTML</option>
+                            <option value="javascript">CSS</option>
+                        </select>
+                        <input class="textbox" type="color" value="#6BD1FF" name="code_editor_color">
+                    </fieldset>
+
+                    <button class="button button-blue" type="submit">Salvar Projeto</button>
+                </form>
+
+            </div>
+
+
+            <!-- <div class="navMenu-container">
+
+                <nav class="navMenu">
+                    <h3>Menu</h3>
+    
+                    <a class="navMenu__link--active" href="index.html">
+                        <img src="assets/img/logo/editor_Icon.png">
+                        Editor de código
+                    </a>
+    
+                    <a class="navMenu__link" href="comunidade.html">
+                        <img src="assets/img/logo/community_Icon.png">
+                        Comunidade
+                    </a>
+                </nav>
+            </div> -->
+
 
         </div>
     </main>
