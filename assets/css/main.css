@@ -39,7 +39,17 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    border-radius: 8px;
+    padding: 0px 14px;
+    height: 56px;
     gap: 10px;
+    transition: 0.3s background;
+}
+
+.header__avatar:hover{
+
+    background: rgba(255, 255, 255, 0.16);
+
 }
 
 .main .container{
