@@ -42,13 +42,50 @@ body {
     gap: 10px;
 }
 
-.textbox {
+.main .container{
 
-    background: rgba(255, 255, 255, 0.16);
-    border-radius: 8px;
-    padding: 0px 14px;
-    height: 56px;
-    width: 100%;
-    border: none;
-    color: #fff;
+    display: flex;
+    justify-content: space-between;
 }
+
+.navMenu{
+
+    display: flex;
+    flex-direction: column;
+}
+
+.navMenu a, .navMenu h3 {
+
+    margin: 0 0 1rem 0;
+}
+
+.navMenu a{
+
+    display: flex;
+    align-items: center;
+    
+}
+
+.navMenu img {
+
+    margin-right: 1rem;
+}
+
+.navMenu__link, .navMenu__link--active{
+
+    text-decoration: none;
+    color: #fff;
+
+}
+
+.navMenu__link{
+
+    opacity: 0.5;
+    transition: 0.3s opacity;
+}
+
+.navMenu__link:hover{
+
+    opacity: 0.8;
+}
+
