@@ -46,20 +46,28 @@ body {
 
 .header__avatar {
 
+    
     display: flex;
     align-items: center;
     justify-content: flex-end;
-    border-radius: 8px;
-    padding: 0px 14px;
-    height: 56px;
-  
-    gap: 10px;
     flex: 0 1 20.0%;
     box-sizing: border-box;
     transition: 0.3s background;
 }
 
-.header__avatar:hover{
+.header__avatar__container{
+
+
+    display: flex;
+    align-items: center;
+    border-radius: 8px;
+    padding: 0px 14px;
+    height: 56px;
+    box-sizing: border-box;
+    transition: 0.3s background;
+}
+
+.header__avatar__container:hover{
 
     background: rgba(255, 255, 255, 0.16);
 
@@ -70,7 +78,6 @@ body {
 
     display: flex;
     justify-content: space-between;
-   align-items: flex-start;
     
 }
 
@@ -121,5 +128,32 @@ body {
 .sideMenu__projetoForm__fieldset-projeto{
 
     margin: 0 0 2rem 0;
+}
+
+.codeEditor-container{
+
+    flex: 0 0 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.codeEditor-container-body{
+
+    
+    height: 100%;
+    padding: 2rem;
+    background: #6BD1FF;
+    box-sizing: border-box;
+    border-radius: 8px;
+    margin: 0 0 2rem 0;
+}
+
+.codeEditor-box{
+
+    width: 100%;
+    background: #000;
+    padding: 1rem;
+    box-sizing: border-box;
+    border-radius: 8px;
 }
 
